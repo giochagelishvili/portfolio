@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <main>
+        <div class="main-text-container">
+            <h1>
+                Hello, I'm
+                <span class="red">Gio Chagelishvili</span>
+            </h1>
+            <h2>
+                Entry-Level Developer<br>
+                From Georgia
+            </h2>
+            <div class="button-container">
+                <form action="/mailto" method="post">                
+                    <button>Contact</button>
+                </form>
+                <form action="/about" method="post">
+                    <button>About</button>
+                </form>
+            </div>
+        </div>
+    </main>
+{% endblock %}

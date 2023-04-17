@@ -1,0 +1,67 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="shortcut icon" href="../staticFiles/images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../staticFiles/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <script src="../staticFiles/app.js"></script>
+
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <span class="material-symbols-outlined red" id="hamburger">
+                    menu
+                </span>
+                <div class="nav-bar-container">
+                    <nav class="nav-bar">
+                        <ul id="nav-menu">
+                            <li class="nav-item" id="home">
+                                <form action="/" method="post">
+                                    <button type="submit">Home</button>
+                                </form>
+                            </li>
+                            <li class="nav-item" id="about">
+                                <form action="/about" method="post">
+                                    <button type="submit">About</button>
+                                </form>
+                            </li>
+                            <li class="nav-item" id="projects">
+                                <form action="/projects" method="post">
+                                    <button type="submit">Projects</button>
+                                </form>
+                            </li>
+                            <li class="nav-item" id="contact">
+                                <form action="/mailto" method="post">
+                                    <button type="submit">Contact</button>
+                                </form>
+                            </li>
+                            <span class="material-symbols-outlined red" id="close">
+                                close
+                            </span>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="logo-container">
+                    <form action="/" method="post">
+                        <button type="submit">
+                            <img src="../staticFiles/images/logo-red.webp" alt="logo" id="logo">
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </header>
+        {% block body %}
+            
+        {% endblock %}
+    </body>
+</html>

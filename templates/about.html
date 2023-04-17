@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <div class="about-text-container">
+        <h1>
+            About 
+           <span class="red">Giorgi Chagelishvili</span>
+        </h1>
+        <h2>
+            Languages:
+            <span class="red">HTML, CSS, JavaScript, Python, C, SQL, Flask</span>
+        </h2>
+        <div class="about-paragraph-container">
+            <p>
+                Hello, my name is Giorgi Chagelishvili (or you can call 
+                me Gio if you'd rather not break your tongue trying to 
+                pronounce my name). 
+            </p>
+            <p>
+                In this portfolio, I've collected some of the best work 
+                I've produced throughout my up-and-coming career as a 
+                developer. 
+            </p>
+            <p>
+                Ever since I can remember, I've always strived to produce
+                 work that would echo throughout the world, and the best 
+                 language I found was programming. With my skills, I want 
+                 to contribute to companies that are determined to leave a
+                 positive mark on the world. 
+            </p>
+            <p>
+                I envision myself in a team full of individuals with the 
+                same purpose as me, grinding day and night to spread an 
+                idea that will make living on earth easier and happier. 
+            </p>
+            <p>
+                Up until this moment, I have worked on more than 15 web 
+                projects (and counting). The only motto I live by is to 
+                get better every single day, even if it's just 1%. 
+            </p>
+            <p>
+                I'm looking to work with a company that will let me hone 
+                my craft to the highest possible level while providing 
+                peak levels of performance for the said company.
+            </p>
+        </div>
+    </div>
+
+    <div class="about-button-container">
+        <form action="/projects" method="post">
+            <button type="submit">
+                PROJECTS
+            </button>
+        </form>
+        <form action="/mailto" method="post">
+            <button type="submit">
+                CONTACT
+            </button>
+        </form>
+    </div>    
+
+    <div class="about-social-button-container">
+        <button id="github" onClick="window.open('https://github.com/giochagelishvili/', '_blank');">
+            <i class="fa fa-github"></i>
+        </button>
+        <button id="linked-in" onClick="window.open('https://www.linkedin.com/in/giochagelishvili/', '_blank');">
+            <i class="fa fa-linkedin"></i>
+        </button>
+        <form action="/mailto" method="post">
+            <button type="submit" id="mail">
+                <i class="material-symbols-outlined">
+                    mail
+                </i>
+            </button>
+        </form>
+    </div>
+
+{% endblock %} 
